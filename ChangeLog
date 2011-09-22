@@ -1,0 +1,51 @@
+2011-01-06 08:59  sami-makinen
+
+	* cl-btree-trunk.asd, package.lisp, test/unit/api.lisp,
+	  test/unit/b-tree-test.lisp,
+	  test/unit/backtracking-list-iterator.lisp, vendor,
+	  vendor/lisp-unit.lisp, vendor/mock.lisp: Refactored cl-btree to
+	  use lisp-unit by Christopher K. Riesbeck.
+	  Note: vendor dir contains slightly modified lisp-unit (with
+	  assert-typep).
+	  Also, mock functions from cl-unit-test is used still.
+	  Unit tests were refactored with following modifications:
+	  - def-test (name) -> define-test name
+	  - assert-typep obj type -> assert-typep type obj
+	  - assert-condition error -> assert-error 'error
+	  - unit tests are in their own package
+	  - all symbols need to have package specification
+
+2011-01-02 09:13  sami-makinen
+
+	* README: Updated README.
+
+2011-01-02 09:10  sami-makinen
+
+	* b-tree.asd, cl-btree-trunk.asd: Renamed asd file to follow
+	  project name and svn version.
+
+2011-01-02 09:09  sami-makinen
+
+	* b-tree.asd, package.lisp: Updated system name and version
+	  according to project name and version.
+	  Removed org.alien-consader from package.
+
+2010-12-05 20:43  sami-makinen
+
+	* loader.lisp: Added loader file.
+
+2010-12-02 20:01  sami-makinen
+
+	* LICENSE, README: Added LICENSE and README files.
+
+2010-11-30 21:36  sami-makinen
+
+	* api.lisp, b-tree.asd, b-tree.lisp,
+	  backtracking-list-iterator.lisp, debug.lisp, package.lisp, test,
+	  test/unit, test/unit/api.lisp, test/unit/b-tree-test.lisp,
+	  test/unit/backtracking-list-iterator.lisp: Initial import.
+
+2010-11-30 21:33  sami-makinen
+
+	* .: New directory.
+

@@ -1,0 +1,16 @@
+CL-BTREE
+Copyright (c) 2008 Sami Makinen
+
+B-Tree implemented in Common Lisp. Stores key/value pairs onto disk
+based data structure. Current implementation has been tested with
+SBCL. Project was originally at alien-consader.org but is now made
+available at SourceForge.
+
+cl-btree depends on following projects: 
+  - cl-binary-file (http://cl-binary-file.sourceforge.net),
+  - cl-swap-file (http://cl-swap-file.sourceforge.net),
+
+cl-btree no longer depends on following projects: 
+  - cl-unit-test (http://cl-unit-test.sourceforge.net),
+
+
